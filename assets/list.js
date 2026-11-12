@@ -1,0 +1,1 @@
+(function(){var f=document.querySelector('[data-filter]');if(!f)return;f.addEventListener('input',function(){var q=f.value.trim().toLowerCase(),n=0;[].forEach.call(document.querySelectorAll('[data-q]'),function(e){var ok=!q||e.getAttribute('data-q').indexOf(q)>-1;e.hidden=!ok;if(ok)n++});var x=document.querySelector('[data-none]');if(x)x.hidden=n>0})})();
